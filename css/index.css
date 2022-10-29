@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 body {
     margin: 0;
@@ -10,15 +11,31 @@ body {
 
 section {
     width: 100%;
+    padding-block: 15px;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #663128;
 }
 
 h1 {
-    font-family: 'Poppins', sans-serif;
-    color: rgba(124, 64, 50, 1);
-    text-transform: uppercase;
+    font-size: 100px;
     font-weight: 900;
-    font-size: 50px;
+}
+
+h2 {
+    font-size: 64px;
+    font-weight: 900;
+    text-transform: uppercase;
     letter-spacing: 2px;
+    color: rgba(124, 64, 50, 1);
+}
+
+h3 {
+    font-size: 58px;
+    font-weight: 700;
+    letter-spacing: 18px;
 }
 
 button {
@@ -48,7 +65,7 @@ button > * {
 button span {
     display: block;
     padding: 12px 24px;
-    font-weight: bolder;
+    font-weight: 900;
 }
 button:before {
     content: "";
@@ -79,12 +96,25 @@ button:active:before {
     transition: width .2s ease-out, padding-top .2s ease-out;
 }
 
-.outlined {
+button.outlined {
     background-color: rgba(0, 0, 0, 0);
     border-width: 3px;
     border-radius: 35px;
     border-color: #7c4032;
     box-shadow: none;
+}
+
+button.outlined:hover {
+    background-color: rgba(102, 49, 40, 1);
+}
+
+button.blank {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+}
+
+button.blank:hover {
+    background-color: rgba(102, 49, 40, 1);
 }
 
 input {
@@ -94,6 +124,7 @@ input {
     padding: 10px 20px;
     border-radius: 25px;
     margin: 10px 50px;
+    min-width: 210px;
 }
 
 footer {
@@ -102,7 +133,23 @@ footer {
     background-color: #7c4032;
 }
 
-.home-backgrond {
+.home-info {
+    display: flex;
+    flex-direction: row;
+    background-image: url("../img/Image - EXPORTAR - BACKGROUND DE FORMAS GEOMÉTRICAS.png");
+    background-size: cover;
+}
+
+.home-text {
+    line-height: 0.2;
+}
+
+.home-text p {
+    color: #663128;
+    line-height: 1;
+}
+
+.home-img {
     max-width: 100%;
 }
 
@@ -110,7 +157,7 @@ footer {
     background-color: #7c4032;
 } 
 
-.services h1 {
+.services h2 {
     color: #fff;
 }
 
@@ -127,8 +174,10 @@ footer {
 .contact-info-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .contact-info {
     text-align: left;
+    line-height: 1.5;
 }
