@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
 body {
     margin: 0;
@@ -149,6 +150,11 @@ footer {
     line-height: 1;
 }
 
+.home-btns {
+    display: flex;
+    flex-direction: row;
+}
+
 .home-img {
     max-width: 100%;
 }
@@ -165,6 +171,37 @@ footer {
     background-image: url("../img/Image\ -\ EXPORTAR\ -\ BACKGROUND\ DE\ FORMAS\ GEOMÉTRICAS.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.cards-container {
+    display: flex;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.testimonial {
+    text-align: left;
+    max-width: 392px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #7C4032;
+    border-radius: 30px;
+    padding: 20px 50px 30px 50px;
+    margin: 20px 50px;
+}
+
+.testimonial span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    color: #7C4032;
+}
+
+.testimonial p {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    color: #333;
 }
 
 .contact {
