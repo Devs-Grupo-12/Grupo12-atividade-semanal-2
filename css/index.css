@@ -3,14 +3,17 @@ body {
     padding: 0;
     background-color: rgba(254, 244, 222, 1);
 }
+
 section {
     width: 100%;
 }
+
 footer {
     padding: 20px;
     height: 5vh;
     background-color: rgb(124, 64, 50);
 }
+
 .home-backgrond {
     max-width: 100%;
 }
