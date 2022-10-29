@@ -1,19 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     background-color: rgba(254, 244, 222, 1);
+    font-family: Trebuchet, Arial, sans-serif;
+    text-align: center;
 }
 
 section {
     width: 100%;
 }
 
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: rgba(124, 64, 50, 1);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+button {
+    position: relative;
+    display: block;
+    margin: 30px auto;
+    padding: 5px 30px;
+    overflow: hidden;
+    border-width: 0;
+    outline: none;
+    border-radius: 25px;
+    box-shadow: 0px 20px 40px rgba(243, 206, 94, 0.2);
+    background-color: rgba(243, 206, 94, 1);
+    color: rgba(102, 49, 40, 1);
+    transition: background-color .3s;
+}
+
+button:hover {
+    background-color: rgba(102, 49, 40, 1);
+    color: rgba(243, 206, 94, 1);
+}
+
+button > * {
+    position: relative;
+}
+
+button span {
+    display: block;
+    padding: 12px 24px;
+    font-weight: bolder;
+}
+button:before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+    width: 0;
+    padding-top: 0;
+
+    border-radius: 100%;
+
+    background-color: rgba(236, 240, 241, .3);
+
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+button:active:before {
+    width: 120%;
+    padding-top: 120%;
+
+    transition: width .2s ease-out, padding-top .2s ease-out;
+}
+
+.outlined {
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 3px;
+    border-radius: 35px;
+    border-color: #7c4032;
+    box-shadow: none;
+}
+
+input {
+    display: block;
+    border: none;
+    background-color: #E6AF99;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 10px 50px;
+}
+
 footer {
     padding: 20px;
     height: 5vh;
-    background-color: rgb(124, 64, 50);
+    background-color: #7c4032;
 }
 
 .home-backgrond {
     max-width: 100%;
+}
+
+.services {
+    background-color: #7c4032;
+} 
+
+.services h1 {
+    color: #fff;
+}
+
+.testimonials {
+    background-image: url("../img/Image\ -\ EXPORTAR\ -\ BACKGROUND\ DE\ FORMAS\ GEOMÉTRICAS.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact {
+    background-color: #fff;
+}
+
+.contact-info-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-info {
+    text-align: left;
 }
